@@ -15,13 +15,13 @@
         }
         label{
             font-size: 20px;
-            text-align: center;
+            text-align: left;
         }
         input{
             color:green;
             font-size: 20px;
             width: 500px;
-            text-align: right;
+            text-align: left;
         }
         h2{
             text-align: center;
@@ -34,13 +34,16 @@
             position: relative;
             left:300px;
         }
-        button{
-            top: 10px;
-            color: black;
-            font-size: 40px;
-            position: relative;
-            left: 250px;
-        }  
+     #btn {
+    display: block;
+    width:30%;
+    padding: 10px 15px;
+    border: 0;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+  } 
         
      
         
@@ -59,7 +62,8 @@
     <input type="number" id="no"><br>
     <label for="timcall">Time for call</label><br>
     <input type="date" id="timcall"> <input type="time" id="time"><br>
-    <button id="submit">submit</button>
+
+    <input type="submit" id="btn" >
    
 
  </form>

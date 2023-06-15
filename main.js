@@ -1,18 +1,19 @@
-let myform=document.querySelector('#my-form');
-let nameInput=document.querySelector('#name');
-let emailinput=document.querySelector('#email');
-let no=document.querySelector('#no');
-let time=document.querySelector('#timcall');
-let clock=document.querySelector('#time');
-myform.addEventListener('submit',onSubmit);
+let button=document.getElementById('btn');
+button.addEventListener("click",onSubmit);
 
-function onSubmit(e){
-    e.preventDefault();
+function onSubmit(){
 
-    if(nameInput===''||emailinput===''||no===''||time===''||clock===''){
-        alert('please enter fields')
-    }
-    else{
-        console.log('success');
-    }
+let nameInput=document.getElementById('name').value;
+
+let emailInput=document.getElementById('email').value;
+let no=document.getElementById('no').value;
+let date=document.getElementById('timcall').value;
+let time =document.getElementById('time').value;
+
+
+ let name=localStorage.setItem('nameInput',nameInput);
+  let email =localStorage.setItem('emailInput',emailInput); 
+   let num=localStorage.setItem('no',no);
+   let time1=localStorage.setItem('date',date); 
+   let clock1=localStorage.setItem('time',time);
 }
